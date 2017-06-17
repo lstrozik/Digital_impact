@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+#main-content {
+  display: none; }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Muli", sans-serif; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.main {
+  max-width: 1440px;
+  height: 552px;
+  background-image: url("../img/glasgow.png");
+  background-size: cover;
+  -webkit-box-shadow: 0px 3px 5px black;
+  -moz-box-shadow: 0px 3px 5px black;
+  -ms-box-shadow: 0px 3px 5px black;
+  box-shadow: 0px 3px 5px black;
+  text-align: center; }
+  .main .just {
+    height: 39px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: bold; }
+    .main .just span {
+      color: #0091d7; }
+  .main .headers {
+    text-align: center;
+    margin-top: 100px;
+    height: 122px; }
+    .main .headers h1 {
+      color: #ffffff;
+      font-size: 42px;
+      letter-spacing: 2px;
+      font-style: normal;
+      font-weight: 700;
+      margin-bottom: 10px; }
+    .main .headers h3 {
+      color: #ffffff;
+      font-size: 19px;
+      font-style: normal;
+      font-stretch: normal;
+      font-weight: 400; }
+  .main .search, .main .search input {
+    margin-top: 100px;
+    height: 50px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    border: none; }
+    .main .search input {
+      width: 430px;
+      margin: 0px;
+      padding: 20px;
+      font-size: 18px;
+      color: #B4B4B4;
+      display: inline-block; }
+    .main .search button {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px;
+      border: none;
+      width: 188px;
+      height: 51px;
+      background-color: #0192D8;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 18px;
+      margin-left: 10px; }
+      .main .search button:hover {
+        color: #0192D8;
+        background-color: #ffffff;
+        transition: 0.3s; }
+  .main .main_logo {
+    float: right;
+    padding: 0px 40px 20px 0px;
+    text-align: right; }
+    .main .main_logo .trusted {
+      font-size: 11px;
+      color: #ffffff;
+      margin-bottom: 0px; }
+    .main .main_logo img {
+      height: 15px;
+      width: 15px; }
+    .main .main_logo .trustpilot {
+      display: inline;
+      font-size: 20px;
+      color: #ffffff; }
+
+.advantages .row {
+  margin-top: 18px; }
+  .advantages .row .circle {
+    height: 313px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+    z-index: 1; }
+    .advantages .row .circle:hover {
+      -webkit-box-shadow: 0px 2px 10px grey;
+      -moz-box-shadow: 0px 2px 10px grey;
+      -ms-box-shadow: 0px 2px 10px grey;
+      box-shadow: 0px 2px 10px grey;
+      transform: translateY(-50px) scale(1.1);
+      -webkit-transform: translateY(-50px) scale(1.1);
+      -ms-transform: translateY(-50px) scale(1.1);
+      transform: translateY(-50px) scale(1.1);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      transition: 0.6s;
+      z-index: 2; }
+    .advantages .row .circle:hover p {
+      visibility: visible; }
+    .advantages .row .circle .inside {
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      border-radius: 50px;
+      height: 50px;
+      width: 50px;
+      margin: 50px auto;
+      -webkit-box-shadow: 0px 4px 9px black;
+      -moz-box-shadow: 0px 4px 9px black;
+      -ms-box-shadow: 0px 4px 9px black;
+      box-shadow: 0px 4px 9px black;
+      text-align: center; }
+      .advantages .row .circle .inside i {
+        font-size: 36px;
+        margin-top: 7px;
+        color: #0192D8; }
+    .advantages .row .circle .visible {
+      margin: 0 auto;
+      width: 151px;
+      height: 52px;
+      color: #455a63;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center; }
+    .advantages .row .circle .hidden {
+      visibility: hidden;
+      font-size: 15px;
+      padding: 0 5px; }
+
+.reviews .left, .reviews .right {
+  background-color: #0192D8;
+  padding: 20px 25px 5px; }
+  .reviews .left .review-title, .reviews .right .review-title {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: lighter;
+    text-align: left; }
+  .reviews .left .stars, .reviews .right .stars {
+    float: right;
+    color: #FFC107;
+    padding-right: 15px; }
+  .reviews .left .review-text, .reviews .right .review-text {
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: light; }
+  .reviews .left .review-bottom, .reviews .right .review-bottom {
+    border-top: 1px solid #ffffff;
+    height: 40px; }
+    .reviews .left .review-bottom .review-last, .reviews .right .review-bottom .review-last {
+      margin-top: 10px; }
+      .reviews .left .review-bottom .review-last img, .reviews .right .review-bottom .review-last img {
+        height: 15px;
+        width: 15px; }
+      .reviews .left .review-bottom .review-last p, .reviews .right .review-bottom .review-last p {
+        display: inline;
+        font-size: 20px;
+        color: #ffffff; }
+      .reviews .left .review-bottom .review-last .date, .reviews .right .review-bottom .review-last .date {
+        float: right;
+        padding-right: 15px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: light;
+        margin: 0; }
+  .reviews .left .dots, .reviews .right .dots {
+    margin-bottom: 15px;
+    color: #ffffff; }
+    .reviews .left .dots .first, .reviews .right .dots .first {
+      font-size: 16px;
+      color: #ffffff; }
+    .reviews .left .dots i, .reviews .right .dots i {
+      font-size: 12px;
+      margin: 0 5px;
+      color: #68BEE7; }
+.reviews .right {
+  background-color: #ECEFF1; }
+  .reviews .right .review-title {
+    color: #787878; }
+  .reviews .right .stars {
+    color: #75C41A; }
+  .reviews .right .review-text {
+    color: #787878; }
+  .reviews .right .dots .first {
+    color: #787878; }
+  .reviews .right .dots i {
+    color: #D2D4D5; }
+  .reviews .right .review-bottom {
+    border-top: 1px solid #787878; }
+    .reviews .right .review-bottom .review-last p {
+      color: #787878; }
+      .reviews .right .review-bottom .review-last p span {
+        color: black; }
+    .reviews .right .review-bottom .review-last .date {
+      color: #787878; }
+
+.descriptions {
+  margin-top: 40px; }
+  .descriptions .transfers, .descriptions .advice {
+    padding: 0 20px; }
+    .descriptions .transfers h1, .descriptions .advice h1 {
+      font-size: 24px;
+      font-weight: lighter;
+      color: #0192D8; }
+    .descriptions .transfers p, .descriptions .advice p {
+      text-align: left;
+      color: #898989;
+      line-height: 24px; }
+
+.standard {
+  background-color: #ECEFF1;
+  min-height: 105px;
+  margin-top: 40px; }
+  .standard .top_section {
+    padding-top: 7px;
+    margin-bottom: 0px; }
+    .standard .top_section .col-4 .standard_life {
+      padding-left: 10px;
+      min-height: 52px;
+      width: 160px; }
+    .standard .top_section .col-4 p {
+      display: inline-block;
+      position: relative;
+      bottom: 10px;
+      color: #0192D8;
+      text-transform: uppercase; }
+      .standard .top_section .col-4 p span {
+        color: #607194; }
+    .standard .top_section .col-4 .search input, .main .search .standard .top_section .col-4 input input {
+      margin-top: 15px;
+      height: 40px;
+      width: 132px;
+      font-size: 18px;
+      display: inline-block;
+      background-color: #D8D8D8;
+      border: none; }
+
+.about_us {
+  min-height: 245px;
+  background-color: #303C42; }
+  .about_us .left_section {
+    padding-right: 20px;
+    padding-left: 165px; }
+    .about_us .left_section .top_row {
+      min-height: 95px;
+      border-bottom: 1px solid #485258;
+      margin-left: 20px; }
+      .about_us .left_section .top_row .about {
+        float: left;
+        margin-top: 40px;
+        color: #CAD4D7;
+        font-size: 19px;
+        font-weight: lighter; }
+      .about_us .left_section .top_row .button .advisor {
+        float: right;
+        margin-top: 30px;
+        background-color: #303C42;
+        border: 1px solid #979797;
+        padding: 12px 10px;
+        color: #ffffff;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+        width: 170px;
+        height: 46px;
+        font-size: 16px;
+        font-weight: 100;
+        cursor: pointer; }
+        .about_us .left_section .top_row .button .advisor:hover {
+          color: #303C42;
+          background-color: #ffffff;
+          border: 1px solid #303C42;
+          transition: 0.5s; }
+    .about_us .left_section .text {
+      color: #CAD4D7;
+      padding-left: 10px;
+      margin-left: 10px;
+      font-size: 15px; }
+  .about_us .right_section {
+    background-color: #37424B;
+    min-height: 245px; }
+    .about_us .right_section .row {
+      border-bottom: 1px solid #485258;
+      height: 95px;
+      margin: 0 10px; }
+      .about_us .right_section .row .just_pensions {
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 30px;
+        font-style: normal;
+        font-stretch: normal;
+        font-weight: bold; }
+        .about_us .right_section .row .just_pensions span {
+          color: #0091d7; }
+    .about_us .right_section .address {
+      color: #C4CFD2;
+      line-height: 28px;
+      padding-left: 25px; }
+
+footer {
+  min-height: 75px;
+  background-color: #455A64; }
+  footer div {
+    display: inline-block;
+    height: 18px;
+    margin-top: 25px; }
+    footer div a {
+      text-decoration: none;
+      color: #ffffff; }
+      footer div a p {
+        margin: 0px;
+        height: 18px; }
+  footer .webdesign {
+    margin-left: 185px;
+    border-right: 1px solid #AEB7BC;
+    padding-right: 20px; }
+  footer .terms {
+    padding-left: 15px; }
+
+@media (max-width: 1166px) {
+  .main .headers h1 {
+    font-size: 32px;
+    margin: 0 20px; }
+  .main .headers h3 {
+    margin: 30px 30px; } }
+@media (max-width: 950px) {
+  .main_logo {
+    display: none; } }
+@media (max-width: 942px) {
+  .main .search, .main .search input {
+    margin: 50px 20px 0px; }
+    .main .search input {
+      max-width: 300px;
+      margin: 50px 20px 0px; } }
+@media (max-width: 600px) {
+  .main .headers h1 {
+    font-size: 24px; }
+  .main .headers h3 {
+    font-size: 16px; }
+  .main .search, .main .search input {
+    margin: 60px 0px 0px; }
+    .main .search input {
+      max-width: 260px; }
+    .main .search button {
+      width: 155px;
+      margin: 10px auto; } }
+@media (max-width: 1200px) {
+  .advantages .row {
+    margin-top: 18px; }
+    .advantages .row .circle:hover {
+      transform: translateY(0px) scale(1);
+      -webkit-transform: translateY(0px) scale(1);
+      -ms-transform: translateY(0px) scale(1);
+      transform: translateY(0px) scale(1); }
+    .advantages .row .circle .hidden {
+      visibility: visible; } }
+@media (max-width: 1200px) {
+  .standard {
+    background-color: #ECEFF1;
+    min-height: 105px;
+    text-align: center; }
+    .standard .search input, .main .search .standard input input {
+      margin-bottom: 15px;
+      height: 40px;
+      width: 132px;
+      font-size: 18px;
+      display: inline-block;
+      background-color: #D8D8D8;
+      border: none; } }
+@media (max-width: 900px) {
+  .standard {
+    background-color: #ECEFF1;
+    min-height: 105px;
+    text-align: center; }
+    .standard .search input, .main .search .standard input input {
+      margin-bottom: 15px;
+      height: 40px;
+      width: 132px;
+      font-size: 18px;
+      display: inline-block;
+      background-color: #D8D8D8;
+      border: none; } }
+@media (max-width: 1200px) {
+  .about_us {
+    min-height: 245px;
+    background-color: #303C42; }
+    .about_us .left_section {
+      padding: 20px; }
+      .about_us .left_section .top_row {
+        text-align: center; }
+        .about_us .left_section .top_row .about {
+          float: none; }
+        .about_us .left_section .top_row .button {
+          margin-bottom: 10px; }
+          .about_us .left_section .top_row .button .advisor {
+            float: none; }
+      .about_us .left_section .text {
+        text-align: center; }
+    .about_us .right_section {
+      background-color: #37424B;
+      min-height: 245px;
+      text-align: center; } }
+@media (max-width: 1200px) {
+  footer {
+    min-height: 75px;
+    background-color: #455A64;
+    text-align: center; }
+    footer div {
+      display: inline-block;
+      height: 18px;
+      margin-top: 25px; }
+      footer div a {
+        text-decoration: none;
+        color: #ffffff; }
+        footer div a p {
+          margin: 0px;
+          height: 18px; }
+    footer .webdesign {
+      margin: 0;
+      border-right: 1px solid #AEB7BC;
+      padding-right: 20px; }
+    footer .terms {
+      padding-left: 15px; } }
+@media (max-width: 450px) {
+  footer {
+    min-height: 95px;
+    background-color: #455A64;
+    text-align: center; }
+    footer div {
+      display: inline-block;
+      height: 18px;
+      margin-top: 25px; }
+      footer div a {
+        text-decoration: none;
+        color: #ffffff; }
+        footer div a p {
+          margin: 0px;
+          height: 18px; }
+    footer .webdesign {
+      margin-top: 10px;
+      margin-bottom: 0px;
+      border: none;
+      padding: 0; }
+    footer .terms {
+      padding-left: 15px; } }
+
+/*# sourceMappingURL=style.css.map */

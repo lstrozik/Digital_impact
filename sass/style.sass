@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css?family=Muli')
+
+// variables
+$main: #0192D8
+$grey: #787878
+$white: #ffffff
+$border: #485258
+$span: #0091d7
+$darkgrey: #303C42
+$back-color: #ECEFF1
+$text-color: #CAD4D7
+
+// mixins
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius:    $radius
+    -ms-border-radius:     $radius
+    border-radius:         $radius
+
+=box-shadow($shadow)
+    -webkit-box-shadow: $shadow
+    -moz-box-shadow:    $shadow
+    -ms-box-shadow:     $shadow
+    box-shadow:         $shadow
+
+#main-content
+    display: none
+*
+    box-sizing: border-box
+    -webkit-box-sizing: border-box
+body
+    max-width: 1440px
+    margin: 0 auto
+    font-family:  'Muli', sans-serif
+
+.container
+    max-width: 1100px
+    margin: 0 auto
+
+
+// top section
+
+.main
+    max-width: 1440px
+    height: 552px
+    background-image: url("../img/glasgow.png")
+    background-size: cover
+    +box-shadow(0px 3px 5px black)
+    text-align: center
+    .just
+        height: 39px
+        color: $white
+        text-align: center
+        font-size: 30.0px
+        font-style: normal
+        font-stretch: normal
+        font-weight: bold
+        span
+            color: $span
+    .headers
+        text-align: center
+        margin-top: 100px
+        height: 122px
+        h1
+            color: $white
+            font-size: 42.0px
+            letter-spacing: 2px
+            font-style: normal
+            font-weight: 700
+            margin-bottom: 10px
+        h3
+            color: $white
+            font-size: 19.0px
+            font-style: normal
+            font-stretch: normal
+            font-weight: 400
+    .search
+        margin-top: 100px
+        height: 50px
+        +border-radius(3px)
+        border: none
+        input
+            @extend .search
+            width: 430px
+            margin: 0px
+            padding: 20px
+            font-size: 18px
+            color: #B4B4B4
+            display: inline-block
+        button
+            +border-radius(3px)
+            border: none
+            width: 188px
+            height: 51px
+            background-color: $main
+            cursor: pointer
+            color: $white
+            font-size: 18px
+            margin-left: 10px
+            &:hover
+                color: $main
+                background-color: $white
+                transition: 0.3s
+
+    .main_logo
+        float: right
+        padding: 0px 40px 20px 0px
+        text-align: right
+        .trusted
+            font-size: 11px
+            color: $white
+            margin-bottom: 0px
+        img
+            height: 15px
+            width: 15px
+        .trustpilot
+            display: inline
+            font-size: 20px
+            color: $white
+
+            // advantages section
+
+.advantages
+    .row
+        margin-top: 18px
+        .circle
+            height: 313px
+            text-align: center
+            cursor: pointer
+            transition: 0.3s
+            background-color: $white
+            z-index: 1
+            &:hover
+                +box-shadow(0px 2px 10px grey)
+                transform: translateY(-50px) scale(1.1)
+                -webkit-transform: translateY(-50px) scale(1.1)
+                -ms-transform: translateY(-50px) scale(1.1)
+                transform: translateY(-50px) scale(1.1)
+                +border-radius(5px)
+                transition: 0.6s
+                z-index: 2
+            &:hover p
+                visibility: visible
+            .inside
+                +border-radius(50px)
+                height: 50px
+                width: 50px
+                margin: 50px auto
+                +box-shadow(0px 4px 9px black)
+                text-align: center
+                i
+                    font-size: 36px
+                    margin-top: 7px
+                    color: $main
+
+            .visible
+                margin: 0 auto
+                width: 151px
+                height: 52px
+                color: #455a63
+                font-size: 18px
+                font-weight: 300
+                text-align: center
+            .hidden
+                visibility: hidden
+                font-size: 15px
+                padding: 0 5px
+
+
+            // Reviews section
+
+
+.reviews
+    .left
+        background-color: $main
+        padding: 20px 25px 5px
+        .review-title
+            color: $white
+            font-size: 19px
+            font-weight: lighter
+            text-align: left
+        .stars
+            float: right
+            color: #FFC107
+            padding-right: 15px
+        .review-text
+            color: $white
+            letter-spacing: 1px
+            font-size: 15px
+            font-weight: light
+        .review-bottom
+            border-top: 1px solid $white
+            height: 40px
+            .review-last
+                margin-top: 10px
+                img
+                    height: 15px
+                    width: 15px
+                p
+                    display: inline
+                    font-size: 20px
+                    color: $white
+                .date
+                    float: right
+                    padding-right: 15px
+                    color: $white
+                    font-size: 20px
+                    font-weight: light
+                    margin: 0
+        .dots
+            margin-bottom: 15px
+            color: $white
+            .first
+                font-size: 16px
+                color: $white
+            i
+                font-size: 12px
+                margin: 0 5px
+                color: #68BEE7
+
+    .right
+        @extend .left
+        background-color: $back-color
+        .review-title
+            color: $grey
+        .stars
+            color: #75C41A
+        .review-text
+            color: $grey
+        .dots
+            .first
+                color: $grey
+            i
+                color: #D2D4D5
+        .review-bottom
+            border-top: 1px solid $grey
+            .review-last
+                p
+                    color: $grey
+                    span
+                        color: black
+                .date
+                    color: $grey
+
+// description sections
+
+.descriptions
+    margin-top: 40px
+    .transfers
+        padding: 0 20px
+        h1
+            font-size: 24px
+            font-weight: lighter
+            color: $main
+        p
+            text-align: left
+            color: #898989
+            line-height: 24px
+
+    .advice
+        @extend .transfers
+
+// 4 input sections
+
+.standard
+    background-color: $back-color
+    min-height: 105px
+    margin-top: 40px
+    .top_section
+        padding-top: 7px
+        margin-bottom: 0px
+        .col-4
+            .standard_life
+                padding-left: 10px
+                min-height: 52px
+                width: 160px
+
+            p
+                display: inline-block
+                position: relative
+                bottom: 10px
+                color: $main
+                text-transform: uppercase
+                span
+                    color: #607194
+            .search
+                input
+                    margin-top: 15px
+                    height: 40px
+                    width: 132px
+                    font-size: 18px
+                    display: inline-block
+                    background-color: #D8D8D8
+                    border: none
+
+// about us section
+
+.about_us
+    min-height: 245px
+    background-color: $darkgrey
+    .left_section
+        padding-right: 20px
+        padding-left: 165px
+        .top_row
+            min-height: 95px
+            border-bottom: 1px solid $border
+            margin-left: 20px
+            .about
+                float: left
+                margin-top: 40px
+                color: $text-color
+                font-size: 19px
+                font-weight: lighter
+            .button
+                .advisor
+                    float: right
+                    margin-top: 30px
+                    background-color: $darkgrey
+                    border: 1px solid #979797
+                    padding: 12px 10px
+                    color: $white
+                    +border-radius(3px)
+                    width: 170px
+                    height: 46px
+                    font-size: 16px
+                    font-weight: 100
+                    cursor: pointer
+                    &:hover
+                        color: $darkgrey
+                        background-color: $white
+                        border: 1px solid $darkgrey
+                        transition: 0.5s
+        .text
+            color: $text-color
+            padding-left: 10px
+            margin-left: 10px
+            font-size: 15px
+
+    .right_section
+        background-color: #37424B
+        min-height: 245px
+        .row
+            border-bottom: 1px solid $border
+            height: 95px
+            margin: 0 10px
+            .just_pensions
+                padding-left: 20px
+                color: $white
+                font-size: 30.0px
+                font-style: normal
+                font-stretch: normal
+                font-weight: bold
+                span
+                    color: $span
+        .address
+            color: #C4CFD2
+            line-height: 28px
+            padding-left: 25px
+
+
+// footer
+
+footer
+    min-height: 75px
+    background-color: #455A64
+    div
+        display: inline-block
+        height: 18px
+        margin-top: 25px
+        a
+            text-decoration: none
+            color: $white
+            p
+                margin: 0px
+                height: 18px
+    .webdesign
+        margin-left: 185px
+        border-right: 1px solid #AEB7BC
+        padding-right: 20px
+    .terms
+        padding-left: 15px
+
+
+
+// media queries
+
+// top section
+
+@media (max-width: 1166px)
+    .main
+        .headers
+            h1
+                font-size: 32px
+                margin: 0 20px
+            h3
+                margin: 30px 30px
+        .search
+@media (max-width: 950px)
+    .main_logo
+        display: none
+@media (max-width: 942px)
+    .main
+        .search
+            margin: 50px 20px 0px
+            input
+                max-width: 300px
+                margin: 50px 20px 0px
+
+@media (max-width: 600px)
+    .main
+        .headers
+            h1
+                font-size: 24px
+            h3
+                font-size: 16px
+        .search
+            margin: 60px 0px 0px
+            input
+                max-width: 260px
+            button
+                width: 155px
+                margin: 10px auto
+
+// advantages section
+
+@media (max-width: 1200px)
+    .advantages
+        .row
+            margin-top: 18px
+            .circle
+                &:hover
+                    transform: translateY(0px) scale(1.0)
+                    -webkit-transform: translateY(0px) scale(1.0)
+                    -ms-transform: translateY(0px) scale(1.0)
+                    transform: translateY(0px) scale(1.0)
+                .hidden
+                    visibility: visible
+
+// section standard
+@media (max-width: 1200px)
+    .standard
+        background-color: $back-color
+        min-height: 105px
+        text-align: center
+        .search
+            input
+                margin-bottom: 15px
+                height: 40px
+                width: 132px
+                font-size: 18px
+                display: inline-block
+                background-color: #D8D8D8
+                border: none
+
+@media (max-width: 900px)
+    .standard
+        background-color: $back-color
+        min-height: 105px
+        text-align: center
+        .search
+            input
+                margin-bottom: 15px
+                height: 40px
+                width: 132px
+                font-size: 18px
+                display: inline-block
+                background-color: #D8D8D8
+                border: none
+
+// section about us
+
+@media (max-width: 1200px)
+    .about_us
+        min-height: 245px
+        background-color: $darkgrey
+        .left_section
+            padding: 20px
+            .top_row
+                text-align: center
+                .about
+                    float: none
+                .button
+                    margin-bottom: 10px
+                    .advisor
+                        float: none
+            .text
+                text-align: center
+
+        .right_section
+            background-color: #37424B
+            min-height: 245px
+            text-align: center
+
+// footer
+
+@media (max-width: 1200px)
+    footer
+        min-height: 75px
+        background-color: #455A64
+        text-align: center
+        div
+            display: inline-block
+            height: 18px
+            margin-top: 25px
+            a
+                text-decoration: none
+                color: $white
+                p
+                    margin: 0px
+                    height: 18px
+        .webdesign
+            margin: 0
+            border-right: 1px solid #AEB7BC
+            padding-right: 20px
+        .terms
+            padding-left: 15px
+
+@media (max-width: 450px)
+    footer
+        min-height: 95px
+        background-color: #455A64
+        text-align: center
+        div
+            display: inline-block
+            height: 18px
+            margin-top: 25px
+            a
+                text-decoration: none
+                color: $white
+                p
+                    margin: 0px
+                    height: 18px
+        .webdesign
+            margin-top: 10px
+            margin-bottom: 0px
+            border: none
+            padding: 0
+        .terms
+            padding-left: 15px
